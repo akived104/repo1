@@ -1,0 +1,58 @@
+1. Tuples are immutable. They have a defined order that cannot be changed.Items cannot be added, updated or remove items once created.
+They can also have items with the same value.
+2. count() and index() are the 2 built-in methods for a tuple.
+  count() returns the count of the element in a tuple
+  index() returns the index of the element in the tuple
+  t = ("hey", "hello", "world", "hello")
+print(t.count("hello")) outputs 2
+print(t.index("world")) outputs 2
+  
+3. Sets cannot have duplicates.
+
+final_list = set(List)
+print(list(final_list))
+4. union() method creates and returns a new set, containing all the elements ( distinct ) present in all the iterables, update() method updates the set on which this method is called with all the distinct elements present in all the iterables.
+
+A = {1,2,3,4,5}
+B = {4,5,6,7,8,9}
+L = [11,12,13,14,15]
+S = A.union(B,L)
+print(S) # outputs {1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15}
+A.update(B,L)
+print(A) #outputs {1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15}
+
+5. Dictionary is unordered.Dictionaries are used to store data values in key:value pairs
+      eg:dict1 = {
+       "name": "Ved",
+        "age": "21",
+       "year": 1234
+}
+6. yes we can
+family = {
+  "child1" : {
+    "name" : "sana",
+    "year" : 1919
+  },
+  "child2" : {
+    "name" : "siya",
+    "year" : 1913
+  },
+  "child3" : {
+    "name" : "Moidu",
+    "year" : 1980
+  }
+}
+7. car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+d = car.setdefault("topics",['Python', 'Machine Learning', 'Deep Learning'])
+print(d)
+
+8. key, value, item are the view objects
+ print(dict1.keys())
+ print(dict1.values())
+ print(dict1.items())
+ 
