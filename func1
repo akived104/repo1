@@ -1,0 +1,79 @@
+1. def keyword is used for functions
+def test():
+    lis=[]
+    for i in range(1,25):
+        if(i%2==1):
+            lis.append(i)
+    return lis
+print(test())
+
+2. *args and *kwargs are used in function definitions in python is used to pass a variable number of arguments to a function. It is used to pass a non-key worded, variable-length argument list. 
+def myFun(*args):
+    print("args: ", args)
+
+
+myFun('Hello', 'World', 'guys', first="Hello", mid="World", last="guys")
+
+Output
+args: ('Hello', 'World', 'guys')
+
+
+def myFun(**kwargs):
+    print("kwargs: ", kwargs)
+
+myFun('Hello', 'World', 'guys', first="Hello", mid="World", last="guys")
+
+Output
+
+kwargs: {'first': 'Hello', 'mid': 'World', 'last': 'guys'}
+
+3.An iterator is an object that contains a countable number of values.
+The iterator consists of two methods: 
+iter() and next().  
+Iter() method is used to initialize the iterator object so that the instance of this object can be used for iterating.
+
+Syntax is
+
+itero = iter()
+
+The next() method is used to iterate over the iterable objects. The next() method returns the next value in the iterable object.
+
+Syntax is
+nel = next(itero)
+
+lis = [2,4,6,8,10,12,14,16,18,20]
+
+myiterator = iter(lis)
+for i in range(1,6):
+   print(next(myiterator))
+   
+4. yield keyword is used to create a generator function. Generator function is memory efficient and can be used like an iterator object.
+def fun_gen():
+    yield "Hello world!"
+    yield "Hi Team"
+ 
+ 
+ob1 = fun_gen()
+print(next(ob1))
+print(next(ob1))
+
+Output
+Hello world!
+Hi Team
+
+5.
+def test():
+ 
+ for Number in range (1, 1000):
+    count = 0
+    for i in range(2, (Number//2 + 1)):
+        if(Number % i == 0):
+            count = count + 1
+            break
+
+    if (count == 0 and Number != 1):
+        yield(Number)
+ 
+in1=test()
+for i in range(1,21):
+ print(next(in1))
