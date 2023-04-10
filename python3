@@ -1,0 +1,23 @@
+1. Guido van Rossum created Python
+2. Python being a multi-paradigm programming language fully supports object-oriented programming and structured programming. Many of their features support functional programming and aspect-oriented programming
+3. Yes, Python is case-sensitive and supports upper case and lower case differently
+4. .py is the correct extension
+5. It is interpreted
+6.  Python uses indentation to define blocks of code. Indentations are simply spaces or tabs used as an indicator that is part of the indent code child.
+7. # is used
+8. Using python_version() function
+9. lambda keyword 
+10. Pip Installs Package
+11. min() - smallest item in iterable
+    max() - largest element in iterable
+    len() - length of list
+    bin()	Returns the binary version of a number
+    bool()	Returns the boolean value of the specified object
+12. 79 characters
+13. Portability - you can run your Python program across Windows, Mac OS, and Linux without modifying the program code
+    write less do more
+    extensive libraries
+    used extensively in machine learning, data science etc
+14. Python uses the dynamic memory allocation which is managed by the Heap data structure. Memory Heap holds the objects and other data structures that will be used in the program. Python memory manager manages the allocation or de-allocation of the heap memory space through the API functions.
+15. Install python from https://www.python.org/downloads/ (first download then install) . Check where it's installed on the system copy the path. Now go to advanced system settings add new variable name it as PYTHON_Name and paste the copied path
+16. Yes
